@@ -58,7 +58,7 @@ get("http://localhost:3000/api/cameras")
     })
     .catch(function (error){
         console.log(error);
-        if (err === 0){
+        if (error === 0){
         // requete ajax annulée
         alert("serveur ne repond pas");
         }
