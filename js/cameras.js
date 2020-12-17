@@ -18,7 +18,7 @@ function addProduct(responseProduit, section){
     price.innerHTML = responseProduit.price/100 + "€";
 
     const link = document.createElement("a");
-    link.setAttribute("href", "produit.html?id=" + responseProduit._id);
+    link.setAttribute("href", "../pages/produit.html?id=" + responseProduit._id);
     
     section[1].appendChild(div);
     div.appendChild(link);

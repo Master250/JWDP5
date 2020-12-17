@@ -151,7 +151,7 @@ function sendOrder(){
         totalPrice += basketContent.price;
       });
       localStorage.setItem("totalOrder", totalPrice +"€");
-      window.location.href = "confirmation.html";// si envoi reussit on se dirige sur la page confirmation   
+      window.location.href = "../pages/confirmation.html";// si envoi reussit on se dirige sur la page confirmation   
       
     })
     .catch(function(error){
