@@ -158,7 +158,7 @@ function sendOrder(){
       basketContent.forEach((basketContent) => {
         totalPrice += basketContent.price;
       });
-      localStorage.setItem("totalOrder", totalPrice);
+      localStorage.setItem("totalOrder", totalPrice +"€");
       window.location.href = "confirmation.html";// si envoi reussit on se dirige sur la page confirmation   
       
     })

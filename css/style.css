@@ -23,6 +23,8 @@ li{
                         /* Main */
 body{
     background-color: seashell;
+    padding: 0;
+    margin: 0;
 }
 
 div.row.justify-content-md-center{
