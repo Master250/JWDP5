@@ -35,11 +35,11 @@ function addProduct(responseProduit, structure){
 
 // Ajout d'une balise div
 
-function addDivToFixDisplay(section){
+function addDivToFixDisplay(structure){
     const div = document.createElement("div");
     div.setAttribute("class", "col-md-5 mt-5 mb-4 ml-4 mr-4");
     div.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-    section[1].appendChild(div);
+    structure[1].appendChild(div);
 }
 
 get("http://localhost:3000/api/cameras")
@@ -49,11 +49,11 @@ get("http://localhost:3000/api/cameras")
 
         //Créeation des cadres de présentations des photos
         for(let i = 0; i < response.length; i = i + 1){
-            addProduct(response[i], section);
+            addProduct(response[i], structure);
         }
         // Ajoiute une div quand le nombre d'élément est impair
         if(response.length % 2 === 1){
-            addDivToFixDisplay(section);
+            addDivToFixDisplay(structure);
         }
     })
     .catch(function (error){
