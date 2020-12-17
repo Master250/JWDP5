@@ -35,11 +35,11 @@ function addProduct(responseProduit, structure){
 
 // Ajout d'une balise div
 
-function addDivToFixDisplay(structure){
+function addDivToFixDisplay(section){
     const div = document.createElement("div");
     div.setAttribute("class", "col-md-5 mt-5 mb-4 ml-4 mr-4");
     div.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-    structure[1].appendChild(div);
+    section[1].appendChild(div);
 }
 
 get("http://localhost:3000/api/cameras")
