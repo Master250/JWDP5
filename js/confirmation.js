@@ -12,4 +12,3 @@ function messageConfirm(){
   confirmation.appendChild(confirmationPrice);
 }
 messageConfirm();
-localStorage.clear();

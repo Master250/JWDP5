@@ -7,7 +7,6 @@ function get(url){
       if(this.readyState === XMLHttpRequest.DONE){
         if(this.status === 200){
           resolve(JSON.parse(request.responseText));
-          console.log("connecté");
         } else{
           reject(request.status);
         }
@@ -28,7 +27,6 @@ function post(url, jsonBody){
       if(request.readyState === 4){
         if(request.status >= 200 && request.status < 300){
             resolve(JSON.parse(this.responseText));
-            console.log(this.responseText);
           }else{
             reject(request.status);
         }
@@ -38,7 +36,6 @@ function post(url, jsonBody){
     request.open("POST", url);
     request.setRequestHeader("content-type", "application/json");
     request.send(JSON.stringify(jsonBody));
-    console.log(jsonBody);
   });
   return promise;
 };
