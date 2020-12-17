@@ -49,7 +49,7 @@ get("http://localhost:3000/api/cameras")
 
         //Créeation des cadres de présentations des photos
         for(let i = 0; i < response.length; i = i + 1){
-            addProduct(response[i], structure);
+            addProduct(response[i], section);
         }
         // Ajoiute une div quand le nombre d'élément est impair
         if(response.length % 2 === 1){
