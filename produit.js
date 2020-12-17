@@ -1,6 +1,6 @@
 // Ajoute des liens vers le code HTML
 
-function addProduct(responseProduit, section){
+function addProduct(responseProduit, structure){
     const div = document.createElement("div");
     div.innerHTML = responseProduit.name;
     div.setAttribute(
@@ -23,7 +23,7 @@ function addProduct(responseProduit, section){
     const link = document.createElement("a");
     link.setAttribute("href", "produit.html?id=" + responseProduit._id);
     
-    section[1].appendChild(div);
+    structure[1].appendChild(div);
     div.appendChild(link);
     link.appendChild(img);
     div.appendChild(legend);
