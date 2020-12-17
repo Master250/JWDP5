@@ -23,7 +23,7 @@ function addProduct(responseProduit, structure){
     const link = document.createElement("a");
     link.setAttribute("href", "produit.html?id=" + responseProduit._id);
     
-    structure.appendChild(div);
+    structure[1].appendChild(div);
     div.appendChild(link);
     link.appendChild(img);
     div.appendChild(legend);
@@ -49,7 +49,7 @@ get("http://localhost:3000/api/cameras")
 
         //Créeation des cadres de présentations des photos
         for(let i = 0; i < response.length; i = i + 1){
-            addProduct(response[i], section);
+            addProduct(response[i], structure);
         }
         // Ajoiute une div quand le nombre d'élément est impair
         if(response.length % 2 === 1){
