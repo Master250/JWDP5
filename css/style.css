@@ -1,0 +1,115 @@
+/* En-tête */
+nav 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img
+{
+    width: 20%;
+}
+
+ul
+{
+    display: flex;
+    list-style: none;
+    font-size: large;
+}
+li{
+    margin-right: 50px;
+}
+/***********************************************************/
+                        /* Main */
+body{
+    background-color: seashell;
+}
+
+div.row.justify-content-md-center{
+    display: block;
+    background-color: #403d39;
+    color: white;
+}
+div.col-md-auto{
+    display: block;
+    text-align: center;
+    padding: 60px;
+}
+h2#space-h.text-center.m-3{
+    text-align: center;
+}
+em{
+    font-size: x-large;
+    font-style: initial;
+}
+/***********************************************************/
+                    /* Display main Grid*/
+.row
+{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows:auto;
+    grid-gap: 80px;
+    justify-content: center;
+}
+.row .basket-title
+{
+    display: flex;
+       
+}
+
+table
+{
+    text-align: center;
+    margin-left: 150px;
+}
+
+form
+{
+    text-align: center;
+    padding: 110px;
+}
+/***********************************************************/
+                    /*Display produit*/
+div.produitcontainer.row{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+/***********************************************************/
+
+                    /*Panier*/
+caption{
+    padding: 60px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+thead{
+    font-size: x-large;
+    
+}
+/***********************************************************/
+                    /* Footer*/
+footer{
+    background-color: #403d39;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+footer .mention-legal{
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+footer .link-utile, .link-utile p
+{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-decoration: none;
+}
+footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
+    margin-top: 40px;
+}
