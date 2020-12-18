@@ -1,5 +1,5 @@
 /* En-tête */
-nav 
+nav.header 
 {
     display: flex;
     justify-content: space-between;
@@ -63,7 +63,7 @@ em{
 table
 {
     text-align: center;
-    margin-left: 150px;
+    margin-left: 200px;
 }
 
 form
@@ -71,8 +71,8 @@ form
     text-align: center;
     padding: 110px;
 }
-/***********************************************************/
-                    /*Display produit*/
+/*********************Display produit*************************/
+                    
 div.produitcontainer.row{
     display: grid;
     grid-template-columns: 1fr;
@@ -89,6 +89,9 @@ caption{
 thead{
     font-size: x-large;
     
+}
+div.produit-border.offset-1.col-md-6.offset-md-3.mt-5.p-3.border-dark img{
+    width: 70%;
 }
 /***********************************************************/
                     /* Footer*/
