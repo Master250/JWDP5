@@ -74,6 +74,8 @@ form
 }
 div.row.justify-content-around{
     text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
 }
 /*********************Display produit*************************/
                     
@@ -97,7 +99,7 @@ thead{
 div.produit-border.offset-1.col-md-6.offset-md-3.mt-5.p-3.border-dark{
     text-align: center;
     display: table-cell;
-    font-weight: bolder;
+    
 }
 div.produit-border.offset-1.col-md-6.offset-md-3.mt-5.p-3.border-dark img{
     width: 70%;
