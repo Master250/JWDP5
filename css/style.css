@@ -1,4 +1,4 @@
-/* En-tête */
+/**************************** En-tête ****************************/
 nav.header 
 {
     display: flex;
@@ -19,8 +19,9 @@ ul
 li{
     margin-right: 50px;
 }
-/***********************************************************/
-                        /* Main */
+
+/*************************** Main **********************************/
+        
 body{
     background-color: seashell;
     padding: 0;
@@ -44,8 +45,7 @@ em{
     font-size: x-large;
     font-style: initial;
 }
-/***********************************************************/
-                    /* Display main Grid*/
+/***************************** Display main Grid********************************/
 .row
 {
     display: grid;
@@ -71,9 +71,6 @@ form
     text-align: center;
     padding: 110px;
 }
-main{
-    text-align: center;
-}
 /*********************Display produit*************************/
                     
 div.produitcontainer.row{
@@ -81,9 +78,9 @@ div.produitcontainer.row{
     grid-template-columns: 1fr;
 
 }
-/***********************************************************/
+/****************************Panier*********************************/
 
-                    /*Panier*/
+                    
 caption{
     padding: 60px;
     font-size: xx-large;
@@ -96,8 +93,18 @@ thead{
 div.produit-border.offset-1.col-md-6.offset-md-3.mt-5.p-3.border-dark img{
     width: 70%;
 }
-/***********************************************************/
-                    /* Footer*/
+/****************************Formulaire*********************************/
+div.formulaire-contact, div.form-group.col-1{
+    margin-bottom: 30px;
+}
+input{
+    width: 50%;
+}
+button#btn1{
+    margin-top: 20px;
+}
+/**************************** Footer*********************************/
+                    
 footer{
     background-color: #403d39;
 }

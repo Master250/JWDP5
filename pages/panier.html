@@ -23,19 +23,21 @@
 <body>
     <header>
         <nav class="header ">
-            <a class="mr-auto text-decoration-none" href="../index.html"><img src="../images/logo.jpg" width="30%"></a>  
-            
+            <a class="mr-auto text-decoration-none" href="index.html"><img src="images/logo.jpg" ></a>  
             <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link text-decoration-none" href="confirmation.html">Commande</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link text-decoration-none" href="panier.html">Panier</a>
-                    </li>
-                </ul>
+                
+                    <ul class="navbar-nav" id="menu">
+                        <li class="nav-item active">
+                            <a class="nav-link text-decoration-none" href="confirmation.html">Commande</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-decoration-none" href="panier.html">Panier</a>
+                        </li>
+                    </ul>
             </div>
+            <button id="button_menu" onfocus="document.getElementById('menu').style.display = 'block';" onblur="document.getElementById('menu').style.display = 'none';" style="display: none;"><i class="fas fa-bars" ></i></button>
         </nav>
+        
     </header>
     <main>
         
@@ -100,7 +102,7 @@
                         <input type="text" name="adresse" class="form-control" id="adresse" placeholder="6, Rue du Moulin"><br>
                     </div>
                 </div>
-                    <div class="form-group col-2">
+                    <div class="form-group col-1">
                         <label for="city">Ville :</label>
                         <input type="text" name="city" class="form-control" id="city" placeholder="Votre ville"><br>
                     </div>
