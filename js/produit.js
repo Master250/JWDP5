@@ -27,7 +27,8 @@ function addProductInfo(response){
 
     const div = document.createElement("div");
     div.setAttribute("class","produit-border offset-1 col-10 col-md-6 offset-md-3 mt-5 mb-5 p-3 border border-dark");
-
+    div.style.fontWeight = "bolder";
+    div.style.fontSize = "2em";
     const img = document.createElement("img");
     img.setAttribute("src", response.imageUrl);
     img.setAttribute("width", "100%");
@@ -35,8 +36,7 @@ function addProductInfo(response){
     const title = document.createElement("div");
     title.innerHTML = response.name;
     title.setAttribute("class", "produittitle text-center mb-4");
-    title.style.fontWeight = "bolder";
-
+    
     const legend = document.createElement("div");
     legend.innerHTML = response.description;
 
