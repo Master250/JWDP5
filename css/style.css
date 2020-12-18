@@ -91,7 +91,7 @@ thead{
     font-size: x-large;
     
 }
-div.produit-border.offset-1.col-md-6.offset-md-3.mt-5.p-3.border-dark img{
+div.produit-border.offset-1.col-md-6.offset-md-3.mt-5.p-3.border-dark {
     width: 70%;
     text-align: center;
 }
