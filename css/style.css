@@ -72,6 +72,9 @@ form
     text-align: center;
     padding: 110px;
 }
+div.row.justify-content-around{
+    text-align: center;
+}
 /*********************Display produit*************************/
                     
 div.produitcontainer.row{
@@ -98,6 +101,7 @@ div.produit-border.offset-1.col-md-6.offset-md-3.mt-5.p-3.border-dark{
 div.produit-border.offset-1.col-md-6.offset-md-3.mt-5.p-3.border-dark img{
     width: 70%;
 }
+
 /****************************Formulaire*********************************/
 div.formulaire-contact, div.form-group.col-1{
     margin-bottom: 30px;
