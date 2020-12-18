@@ -70,7 +70,6 @@ function addProductInfo(response){
             "option" : lenseSelectionner,
             "img" : response.imageUrl,
             "price" : response.price/100
-            
         });
         alert("ajouté au panier");
     });
@@ -83,24 +82,23 @@ function addProductInfo(response){
     };
 
     /* arboresences dans la page HTML */
-    container.appendChild(div);
-    div.appendChild(title);
-    div.appendChild(img);
-    div.appendChild(legend);
-    div.appendChild(lenses);
-    div.appendChild(price);
-    div.appendChild(btn);
+        container.appendChild(div);
+        div.appendChild(title);
+        div.appendChild(img);
+        div.appendChild(legend);
+        div.appendChild(lenses);
+        div.appendChild(price);
+        div.appendChild(btn);
 };
-const id = getId();
-get("http://localhost:3000/api/cameras/" + id) // Requête ajax GET
-.then(function (response){
-    console.log(response);
-        addProductInfo(response);
-    })
-    .catch(function(error){
-        console.log(error);
-        if (error === 0){
-            // requête ajax annulé
-            alert("serveur ne repond pas");
-        }
+    const id = getId();
+    get("http://localhost:3000/api/cameras/" + id) // Requête ajax GET
+    .then(function (response){
+        console.log(response);
+            addProductInfo(response);
+        })
+        .catch(function(error){// requête ajax annulé
+            console.log(error);
+            if (error === 0){
+                alert("serveur ne repond pas");
+            }
     });

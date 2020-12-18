@@ -57,7 +57,7 @@ function addBasketProduct(){
 
 
 /* Validation des données et les expressions régulières formulaire et contôle Regex */
-function isAlpha(value){
+  function isAlpha(value){
     return /[a-zA-Z]+/.test(value);
   }
   function validateEmail(value){
@@ -74,10 +74,10 @@ function isAlpha(value){
   
   function alertMessage(klass,msg){
     const errorMessage = document.createElement("p");
-      errorMessage.setAttribute("class", klass);
-      errorMessage.innerHTML = msg;
-      errorMessage.style.color = "#FF3D00";
-      commandValid = false;
+    errorMessage.setAttribute("class", klass);
+    errorMessage.innerHTML = msg;
+    errorMessage.style.color = "#FF3D00";
+    commandValid = false;
      
     return errorMessage;
   };
@@ -119,11 +119,11 @@ function isAlpha(value){
 function sendOrder(){
   /*Récupération les informations de contact */
   const contact = {
-     "lastName" :document.getElementById("name").value,
-     "firstName" : document.getElementById("firstname").value,
-     "email" : document.getElementById("email").value,
-     "address" : document.getElementById("adresse").value,
-     "city" : document.getElementById("city").value
+    "lastName" :document.getElementById("name").value,
+    "firstName" : document.getElementById("firstname").value,
+    "email" : document.getElementById("email").value,
+    "address" : document.getElementById("adresse").value,
+    "city" : document.getElementById("city").value
   };
 
   const basketContent = JSON.parse(localStorage.getItem("basketContent"));
@@ -144,14 +144,14 @@ function sendOrder(){
 
   post("http://localhost:3000/api/cameras/order",sendOrderInfo).then(function(response){
       
-      localStorage.setItem("basketContent", JSON.stringify([]));   
-      localStorage.setItem("orderValid",response.orderId);
-      let totalPrice = 0;
-      basketContent.forEach((basketContent) => {
-        totalPrice += basketContent.price;
-      });
-      localStorage.setItem("totalOrder", totalPrice +"€");
-      window.location.href = "../pages/confirmation.html";// si envoi reussit on se dirige sur la page confirmation   
+    localStorage.setItem("basketContent", JSON.stringify([]));   
+    localStorage.setItem("orderValid",response.orderId);
+    let totalPrice = 0;
+    basketContent.forEach((basketContent) => {
+      totalPrice += basketContent.price;
+    });
+    localStorage.setItem("totalOrder", totalPrice +"€");
+    window.location.href = "../pages/confirmation.html";// si envoi reussit on se dirige sur la page confirmation   
       
     })
     .catch(function(error){
