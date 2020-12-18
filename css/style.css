@@ -71,6 +71,9 @@ form
     text-align: center;
     padding: 110px;
 }
+main{
+    text-align: center;
+}
 /*********************Display produit*************************/
                     
 div.produitcontainer.row{
