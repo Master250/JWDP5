@@ -35,6 +35,7 @@ function addProductInfo(response){
     const title = document.createElement("div");
     title.innerHTML = response.name;
     title.setAttribute("class", "produittitle text-center mb-4");
+    title.setAttribute("font-weight", "bolder");
 
     const legend = document.createElement("div");
     legend.innerHTML = response.description;
