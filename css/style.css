@@ -92,12 +92,11 @@ thead{
     
 }
 div.produit-border.offset-1.col-md-6.offset-md-3.mt-5.p-3.border-dark{
-    width: 70%;
     text-align: center;
     display: table-cell;
 }
 div.produit-border.offset-1.col-md-6.offset-md-3.mt-5.p-3.border-dark img{
-    display: unset;
+    width: 70%;
 }
 /****************************Formulaire*********************************/
 div.formulaire-contact, div.form-group.col-1{
