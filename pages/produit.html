@@ -16,38 +16,40 @@
 </head>
 
 <body>
-    <header>
-        <nav class="header ">
-            <a class="mr-auto text-decoration-none" href="../index.html"><img src="../images/logo.jpg" ></a>  
-            <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
-                
-                    <ul class="navbar-nav" id="menu">
-                        <li class="nav-item active">
-                            <a class="nav-link text-decoration-none" href="../index.html">Accueil</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-decoration-none" href="panier.html">Panier</a>
-                        </li>
-                    </ul>
+    <div id="page-container">
+        <header>
+            <nav class="header ">
+                <a class="mr-auto text-decoration-none" href="../index.html"><img src="../images/logo.jpg" ></a>  
+                <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                        <ul class="navbar-nav" id="menu">
+                            <li class="nav-item active">
+                                <a class="nav-link text-decoration-none" href="../index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-decoration-none" href="panier.html">Panier</a>
+                            </li>
+                        </ul>
+                </div>
+                <button id="button_menu" onfocus="document.getElementById('menu').style.display = 'block';" onblur="document.getElementById('menu').style.display = 'none';" style="display: none;"><i class="fas fa-bars" ></i></button>
+            </nav>
+            
+        </header>
+        <main>
+            <div id="produitcontainer" class="row" style="display: contents"></div>
+        </main>
+        <footer id="footer" class="d-flex justify-content-between pt-3 pb-3 fixed-bottom">
+            <div class="mention-legal">
+                <p>Copyright © 2020 Caméras-Photo by Orinoco - Tous droits réservés</p>
+                <p>Projet 5 - Parcours Developpeur Web - OpenClassrooms</p>
             </div>
-            <button id="button_menu" onfocus="document.getElementById('menu').style.display = 'block';" onblur="document.getElementById('menu').style.display = 'none';" style="display: none;"><i class="fas fa-bars" ></i></button>
-        </nav>
-        
-    </header>
-    <main>
-        <div id="produitcontainer" class="row" style="display: contents"></div>
-    </main>
-    <footer id="footer" class="d-flex justify-content-between pt-3 pb-3 fixed-bottom">
-        <div class="mention-legal">
-            <p>Copyright © 2020 Caméras-Photo by Orinoco - Tous droits réservés</p>
-            <p>Projet 5 - Parcours Developpeur Web - OpenClassrooms</p>
-        </div>
-        <div class="link-utile">
-            <a class="text-decoration-none text-body pl-2" href="../index.html"> <p> Mentions Légales.</p></a>
-            <a class="text-decoration-none text-body pr-2" href="mailto:tiamiyu@orinoco.com"> <p> Contactez-nous.</p></a>
-        </div>
-    </footer>
-<script type="text/javascript" src="../js/ajax.js"></script>
-<script type="text/javascript" src="../js/produit.js"></script>
+            <div class="link-utile">
+                <a class="text-decoration-none text-body pl-2" href="../index.html"> <p> Mentions Légales.</p></a>
+                <a class="text-decoration-none text-body pr-2" href="mailto:tiamiyu@orinoco.com"> <p> Contactez-nous.</p></a>
+            </div>
+        </footer>
+    <script type="text/javascript" src="../js/ajax.js"></script>
+    <script type="text/javascript" src="../js/produit.js"></script>
+</div>
 </body>
 </html>

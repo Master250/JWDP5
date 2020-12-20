@@ -21,108 +21,110 @@
 </head>
 
 <body>
-    <header>
-        <nav class="header ">
-            <a class="mr-auto text-decoration-none" href="../index.html"><img src="../images/logo.jpg" ></a>  
-            <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
-                
-                    <ul class="navbar-nav" id="menu">
-                        <li class="nav-item active">
-                            <a class="nav-link text-decoration-none" href="../index.html">Accueil</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-decoration-none" href="panier.html">Panier</a>
-                        </li>
-                    </ul>
-            </div>
-            <button id="button_menu" onfocus="document.getElementById('menu').style.display = 'block';" onblur="document.getElementById('menu').style.display = 'none';" style="display: none;"><i class="fas fa-bars" ></i></button>
-        </nav>
-        
-    </header>
-    <main>
-        
-        <table id="producttable">
-            <caption>Details de vos commandes</caption>
-            <thead>
-              <tr>
-                <!--En-tête -->
-                <td width="350px">Image</td>
-                <td width="150px">Articles</td>
-                <td width="150px">Focales </td>
-                <td width="150px" style="font-weight: bolder;">Prix</td>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- existing data could optionally be included here -->
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="6" id="totalPrice" style="font-weight: bolder;"></td>
-                </tr>
-            </tfoot>
-        </table>
-        <template id="product">
-            <tr >
-                <td data-id="">
-                    <a href="">
-                        <img src="" alt="" width="40%">
-                    </a>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><button id="btn" data-id="" data-ref="" >Supprimer</button></td>   
-            </tr>
-                              
-        </template>
-        
-        <form id="form_1" class="account" >
-            <div class="text-validation col-">
-                <p>Merci de remplir le formulaire pour valider la commande</p>
-            </div>
-            <div id="warning"></div>
-                <div class="formulaire-contact">
-                    <div class="form-group col-1">
-                        <label for="prenom">Prénom :</label>
-                        <input type="text" name="prenom" class="form-control" id="firstname" placeholder="Votre prénom"><br>
-                    </div>
-                    <div class="form-group col-1">
-                        <label for="nom">Nom :</label>
-                        <input type="text" name="nom" class="form-control" id="name" placeholder="Votre nom"><br>
-                    </div>
+    <div id="page-container">
+        <header>
+            <nav class="header ">
+                <a class="mr-auto text-decoration-none" href="../index.html"><img src="../images/logo.jpg" ></a>  
+                <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                        <ul class="navbar-nav" id="menu">
+                            <li class="nav-item active">
+                                <a class="nav-link text-decoration-none" href="../index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-decoration-none" href="panier.html">Panier</a>
+                            </li>
+                        </ul>
                 </div>
-                <div class="formulaire-contact">
-                    <div class="form-group col-1">
-                        <label for="email">Email :</label>
-                        <input type="email" name="email" class="form-control" id="email" placeholder="Votre email@email.fr"><br>
-                    </div>
-                    <div class="form-group col-1">
-                        <label for="adresse">Adresse :</label>
-                        <input type="text" name="adresse" class="form-control" id="adresse" placeholder="6, Rue du Moulin"><br>
-                    </div>
-                </div>
-                    <div class="form-group col-1">
-                        <label for="city">Ville :</label>
-                        <input type="text" name="city" class="form-control" id="city" placeholder="Votre ville"><br>
-                    </div>
-        
-                <button type="submit" onclick="" id="btn1" aria-label="valider le formulaire">Valider mon panier</button>
+                <button id="button_menu" onfocus="document.getElementById('menu').style.display = 'block';" onblur="document.getElementById('menu').style.display = 'none';" style="display: none;"><i class="fas fa-bars" ></i></button>
+            </nav>
             
-            </form>
-  
-     </main> 
-     <footer id="footer" class="d-flex justify-content-between pt-3 pb-3 fixed-bottom">
-        <div class="mention-legal">
-            <p>Copyright © 2020 Caméras-Photo by Orinoco - Tous droits réservés</p>
-            <p>Projet 5 - Parcours Developpeur Web - OpenClassrooms</p>
-        </div>
-        <div class="link-utile">
-            <a class="text-decoration-none text-body pl-2" href="../index.html"> <p> Mentions Légales.</p></a>
-            <a class="text-decoration-none text-body pr-2" href="mailto:tiamiyu@orinoco.com"> <p> Contactez-nous.</p></a>
-        </div>
-    </footer>
-    <script src="../js/ajax.js"></script>
-    <script src="../js/paniers.js"></script>   
+        </header>
+        <main>
+            
+            <table id="producttable">
+                <caption>Details de vos commandes</caption>
+                <thead>
+                <tr>
+                    <!--En-tête -->
+                    <td width="350px">Image</td>
+                    <td width="150px">Articles</td>
+                    <td width="150px">Focales </td>
+                    <td width="150px" style="font-weight: bolder;">Prix</td>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- existing data could optionally be included here -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6" id="totalPrice" style="font-weight: bolder;"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <template id="product">
+                <tr >
+                    <td data-id="">
+                        <a href="">
+                            <img src="" alt="" width="40%">
+                        </a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button id="btn" data-id="" data-ref="" >Supprimer</button></td>   
+                </tr>
+                                
+            </template>
+            
+            <form id="form_1" class="account" >
+                <div class="text-validation col-">
+                    <p>Merci de remplir le formulaire pour valider la commande</p>
+                </div>
+                <div id="warning"></div>
+                    <div class="formulaire-contact">
+                        <div class="form-group col-1">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" name="prenom" class="form-control" id="firstname" placeholder="Votre prénom"><br>
+                        </div>
+                        <div class="form-group col-1">
+                            <label for="nom">Nom :</label>
+                            <input type="text" name="nom" class="form-control" id="name" placeholder="Votre nom"><br>
+                        </div>
+                    </div>
+                    <div class="formulaire-contact">
+                        <div class="form-group col-1">
+                            <label for="email">Email :</label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Votre email@email.fr"><br>
+                        </div>
+                        <div class="form-group col-1">
+                            <label for="adresse">Adresse :</label>
+                            <input type="text" name="adresse" class="form-control" id="adresse" placeholder="6, Rue du Moulin"><br>
+                        </div>
+                    </div>
+                        <div class="form-group col-1">
+                            <label for="city">Ville :</label>
+                            <input type="text" name="city" class="form-control" id="city" placeholder="Votre ville"><br>
+                        </div>
+            
+                    <button type="submit" onclick="" id="btn1" aria-label="valider le formulaire">Valider mon panier</button>
+                
+                </form>
+    
+        </main> 
+        <footer id="footer" class="d-flex justify-content-between pt-3 pb-3 fixed-bottom">
+            <div class="mention-legal">
+                <p>Copyright © 2020 Caméras-Photo by Orinoco - Tous droits réservés</p>
+                <p>Projet 5 - Parcours Developpeur Web - OpenClassrooms</p>
+            </div>
+            <div class="link-utile">
+                <a class="text-decoration-none text-body pl-2" href="../index.html"> <p> Mentions Légales.</p></a>
+                <a class="text-decoration-none text-body pr-2" href="mailto:tiamiyu@orinoco.com"> <p> Contactez-nous.</p></a>
+            </div>
+        </footer>
+        <script src="../js/ajax.js"></script>
+        <script src="../js/paniers.js"></script>
+    </div> 
 </body>
 </html>

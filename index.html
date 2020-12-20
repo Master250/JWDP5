@@ -17,54 +17,56 @@
 </head>
 
 <body>
-    <header>
-        <nav class="header ">
-            <a class="mr-auto text-decoration-none" href="index.html"><img src="images/logo.jpg" ></a>  
-            <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
-                
-                    <ul class="navbar-nav" id="menu">
-                        <li class="nav-item active">
-                            <a class="nav-link text-decoration-none" href="pages/panier.html">Panier</a>
-                        </li>
-                    </ul>
-            </div>
-            <button id="button_menu" onfocus="document.getElementById('menu').style.display = 'block';" onblur="document.getElementById('menu').style.display = 'none';" style="display: none;"><i class="fas fa-bars" ></i></button>
-        </nav>
-        
-    </header>
-    <main>
-        <section class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-md-auto">
-                    <h1 class="text-center m-5" id="camera"> Bienvenue sur notre site de vente en ligne des cameras-vintage</h1>
-                    <h2 class="cameras-vintage">
-                        Les nouvelles collections du mois
-                    </h2>
-                    <h3>Que vous cherchiez un appareil à optiques interchangeables ou le dernier compact expert dernier cri, vous trouverez votre bonheur chez <em>Orinoco</em>.</h3>
+    <div id="page-container">
+        <header>
+            <nav class="header ">
+                <a class="mr-auto text-decoration-none" href="index.html"><img src="images/logo.jpg" ></a>  
+                <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                        <ul class="navbar-nav" id="menu">
+                            <li class="nav-item active">
+                                <a class="nav-link text-decoration-none" href="pages/panier.html">Panier</a>
+                            </li>
+                        </ul>
                 </div>
-            </div>
-        </section>
-        <section>
-            <h2 class="text-center m-3" id="space-h">
-                Selectionnez votre futur appareil photo!
-            </h2>
-            <div class="container">
-                <div class="row justify-content-around"> 
+                <button id="button_menu" onfocus="document.getElementById('menu').style.display = 'block';" onblur="document.getElementById('menu').style.display = 'none';" style="display: none;"><i class="fas fa-bars" ></i></button>
+            </nav>
+            
+        </header>
+        <main>
+            <section class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        <h1 class="text-center m-5" id="camera"> Bienvenue sur notre site de vente en ligne des cameras-vintage</h1>
+                        <h2 class="cameras-vintage">
+                            Les nouvelles collections du mois
+                        </h2>
+                        <h3>Que vous cherchiez un appareil à optiques interchangeables ou le dernier compact expert dernier cri, vous trouverez votre bonheur chez <em>Orinoco</em>.</h3>
+                    </div>
                 </div>
+            </section>
+            <section>
+                <h2 class="text-center m-3" id="space-h">
+                    Selectionnez votre futur appareil photo!
+                </h2>
+                <div class="container">
+                    <div class="row justify-content-around"> 
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer" class="d-flex justify-content-between pt-3 pb-3 fixed-bottom">
+            <div class="mention-legal">
+                <p>Copyright © 2020 Caméras-Photo by Orinoco - Tous droits réservés</p>
+                <p>Projet 5 - Parcours Developpeur Web - OpenClassrooms</p>
             </div>
-        </section>
-    </main>
-    <footer id="footer" class="d-flex justify-content-between pt-3 pb-3 fixed-bottom">
-        <div class="mention-legal">
-            <p>Copyright © 2020 Caméras-Photo by Orinoco - Tous droits réservés</p>
-            <p>Projet 5 - Parcours Developpeur Web - OpenClassrooms</p>
-        </div>
-        <div class="link-utile">
-            <a class="text-decoration-none text-body pl-2" href="index.html"> <p> Mentions Légales.</p></a>
-            <a class="text-decoration-none text-body pr-2" href="mailto:tiamiyu@orinoco.com"> <p> Contactez-nous.</p></a>
-        </div>
-    </footer>
-    <script type="text/javascript" src="js/ajax.js"></script>
-    <script type="text/javascript" src="js/cameras.js"></script>
+            <div class="link-utile">
+                <a class="text-decoration-none text-body pl-2" href="index.html"> <p> Mentions Légales.</p></a>
+                <a class="text-decoration-none text-body pr-2" href="mailto:tiamiyu@orinoco.com"> <p> Contactez-nous.</p></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/ajax.js"></script>
+        <script type="text/javascript" src="js/cameras.js"></script>
+    </div>
 </body>
 </html>

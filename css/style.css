@@ -40,12 +40,17 @@ div.col-md-auto{
 }
 h2#space-h.text-center.m-3{
     text-align: center;
+    margin: 50px;
 }
 em{
     font-size: x-large;
     font-style: initial;
 }
-
+main{
+    margin-bottom: 200px;
+    background-color: #000000d9;
+    color: whitesmoke;
+}
 /***************************** Display main Grid********************************/
 .row
 {
@@ -75,7 +80,7 @@ form
 div.row.justify-content-around{
     text-align: center;
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 1.0em;
 }
 /*********************Display produit*************************/
                     
@@ -84,8 +89,11 @@ div.produitcontainer.row{
     grid-template-columns: 1fr;
 
 }
-div.col-md-5.product-border.mt-5.mb-4.col-sm-6mr-4.ml-4.border.border.border-dark div, div.col-md-5.product-border.mt-5.mb-4.col-sm-6mr-4.ml-4.border.border.border-dark p{
-    font-size: 18px;
+footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
 /****************************Panier*********************************/
 
@@ -130,7 +138,6 @@ a:hover, a:visited, a:link, a:active
 }
 footer .mention-legal{
     text-align: center;
-    padding: 30px;
     color: white;
 }
 footer .link-utile, .link-utile p
