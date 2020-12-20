@@ -84,6 +84,9 @@ div.produitcontainer.row{
     grid-template-columns: 1fr;
 
 }
+div.col-md-5.product-border.mt-5.mb-4.col-sm-6mr-4.ml-4.border.border.border-dark div, div.col-md-5.product-border.mt-5.mb-4.col-sm-6mr-4.ml-4.border.border.border-dark p{
+    font-size: 18px;
+}
 /****************************Panier*********************************/
 
                     
