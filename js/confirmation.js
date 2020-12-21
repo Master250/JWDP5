@@ -47,9 +47,9 @@ function messageConfirm(){
   photoProduct.setAttribute("width", "110px");
   let nomProduct = document.createElement("td");
   nomProduct.textContent = element.name;
-  nomProduct.setAttribute("width", "100px");
+  nomProduct.setAttribute("width", "150px");
   let prixProduct = document.createElement("td");
-  prixProduct.setAttribute("width", "100px");
+  prixProduct.setAttribute("width", "150px");
   prixProduct.textContent = element.price/100 +"€";
 
       
