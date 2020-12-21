@@ -82,6 +82,17 @@ div.row.justify-content-around{
     font-weight: bolder;
     font-size: 1.0em;
 }
+div#review table caption{
+    padding: 20px;
+    font-size: large;
+}
+div#review table{
+    width: 60%;
+}
+div#review table tr:last-child{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
 /*********************Display produit*************************/
                     
 div.produitcontainer.row{
