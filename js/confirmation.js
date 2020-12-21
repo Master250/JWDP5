@@ -66,7 +66,7 @@ function messageConfirm(){
     lignTotal.appendChild(prixConfirme);
     lignPrixTotal.textContent ="Prix Payé";
     lignPrixTotal.setAttribute("colspan", "4");
-    prixConfirme.textContent = totalOrder +"TTC";
+    prixConfirme.textContent = totalOrder + " TTC";
     lignPrixTotal.setAttribute("colspan", "2");
 
     });
