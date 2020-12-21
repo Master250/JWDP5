@@ -31,7 +31,7 @@ function addBasketProduct(){
                 td[0].firstElementChild.firstElementChild.src = productBasket.img;
                 td[1].textContent = productBasket.name;
                 td[2].textContent = productBasket.option;
-                td[3].textContent = productBasket.price;
+                td[3].textContent = productBasket.price +"€";
                 td[5].firstElementChild.dataset.ref = i; // On récupère la reférence de l'élément à supprimer
                 let btn = td[5].firstElementChild;
                 
