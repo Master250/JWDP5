@@ -21,7 +21,7 @@ function messageConfirm(){
   let colonNom = document.createElement("th");
   let colonPrix = document.createElement("th");
 
-  let lignTotal = document.createElement("tr");
+  let lignTotal = document.createElement("tfoot");
   let lignPrixTotal = document.createElement("th");
   let prixConfirme = document.createElement("td");
 
