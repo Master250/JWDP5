@@ -36,7 +36,7 @@ function messageConfirm(){
   lign.appendChild(containPhoto);
   lign.appendChild(colonNom);
   lign.appendChild(colonPrix);
-  
+
   let i = 0;
   const basketRecap = JSON.parse(localStorage.getItem("recap"));
   basketRecap.products.forEach((element) => {
@@ -50,7 +50,7 @@ function messageConfirm(){
   nomProduct.setAttribute("width", "100px");
   let prixProduct = document.createElement("td");
   prixProduct.setAttribute("width", "100px");
-  prixProduct.textContent = element.price/100 +"€";
+  prixProduct.textContent = element.price/100 +"€"+"TTC";
 
       
       
