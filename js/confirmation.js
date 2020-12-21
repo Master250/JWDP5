@@ -6,7 +6,7 @@ function messageConfirm(){
   const smsConfirm = document.createElement("p");
   smsConfirm.innerHTML = "Nous vous remercions pour votre commande n° "+ idOrderValid;
   const confirmationPrice = document.createElement("p");
-  confirmationPrice.innerHTML = "Prix total de votre commande: "+totalOrder+"TTC";
+  confirmationPrice.innerHTML = "Prix total de votre commande: "+totalOrder + " TTC";
   smsConfirm.setAttribute("class", "confirmation-title pt-5")
   confirmation.appendChild(smsConfirm);
   confirmation.appendChild(confirmationPrice);
