@@ -6,7 +6,7 @@ function messageConfirm(){
   const smsConfirm = document.createElement("p");
   smsConfirm.innerHTML = "Nous vous remercions pour votre commande n° "+ idOrderValid;
   const confirmationPrice = document.createElement("p");
-  confirmationPrice.innerHTML = "Prix total de votre commande: "+totalOrder;
+  confirmationPrice.innerHTML = "Prix total de votre commande: "+totalOrder+"TTC";
   smsConfirm.setAttribute("class", "confirmation-title pt-5")
   confirmation.appendChild(smsConfirm);
   confirmation.appendChild(confirmationPrice);
@@ -50,7 +50,7 @@ function messageConfirm(){
   nomProduct.setAttribute("width", "100px");
   let prixProduct = document.createElement("td");
   prixProduct.setAttribute("width", "100px");
-  prixProduct.textContent = element.price/100 +"€"+"TTC";
+  prixProduct.textContent = element.price/100 +"€";
 
       
       
@@ -66,7 +66,7 @@ function messageConfirm(){
     lignTotal.appendChild(prixConfirme);
     lignPrixTotal.textContent ="Prix Payé";
     lignPrixTotal.setAttribute("colspan", "4");
-    prixConfirme.textContent = totalOrder;
+    prixConfirme.textContent = totalOrder +"TTC";
     lignPrixTotal.setAttribute("colspan", "2");
 
     });
