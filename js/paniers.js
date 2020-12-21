@@ -143,8 +143,7 @@ function sendOrder(){
   /* Envoi des informations et du tableau des produits */
 
   post("http://localhost:3000/api/cameras/order",sendOrderInfo).then(function(response){
-      
-    localStorage.setItem("basketContent", JSON.stringify([]));   
+         
     localStorage.setItem("orderValid",response.orderId);
     let totalPrice = 0;
     basketContent.forEach((basketContent) => {
