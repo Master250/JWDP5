@@ -1,4 +1,4 @@
-// Ajoute des liens vers le code HTML
+/**************** Ajoute des liens vers le code HTML *************/
 
 function addProduct(responseProduit, section){
     const div = document.createElement("div");
@@ -26,22 +26,17 @@ function addProduct(responseProduit, section){
     div.appendChild(legend);
     div.appendChild(lenses);
     div.appendChild(price);
-    
-    
 }
 
 get("http://localhost:3000/api/cameras")
     .then(function(response){
         const section = document.getElementsByClassName("row");
-
-        //Créeation des cadres de présentations des appareils photos
-        for(let i = 0; i < response.length; i = i + 1){
+        for(let i = 0; i < response.length; i = i + 1){//Créeation des cadres de présentations des appareils photos
             addProduct(response[i], section);
         }
     })
-    .catch(function (error){
+    .catch(function (error){// requete ajax annulée
         if (error === 0){
-        // requete ajax annulée
         alert("serveur ne repond pas");
         }
 });

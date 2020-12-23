@@ -1,4 +1,4 @@
-    /* Récupérer l'id dans l'URL */
+    /******************** Récupérer l'id dans l'URL *************/
 function getId(){
     const param = window.location.search;
     console.log(window.location);
@@ -6,7 +6,7 @@ function getId(){
     return id;
 };
 
-    /* Ajoute l'appareil dans le panier avec la lentille selectionnée par l'utilisateur */
+    /*************** Ajoute l'appareil dans le panier avec la lentille selectionnée par l'utilisateur **********/
 function addBasketContent(item){
     
     let basketContent = JSON.parse(localStorage.getItem("basketContent"));
@@ -28,7 +28,7 @@ function addProductInfo(response){
     const div = document.createElement("div");
     div.setAttribute("class","produit-border offset-1 col-10 col-md-6 offset-md-3 mt-5 mb-5 p-3 border border-dark");
     div.style.fontWeight = "bolder";
-    
+
     const img = document.createElement("img");
     img.setAttribute("src", response.imageUrl);
     img.setAttribute("width", "100%");

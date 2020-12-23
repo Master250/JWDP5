@@ -11,6 +11,7 @@ function messageConfirm(){
   confirmation.appendChild(smsConfirm);
   confirmation.appendChild(confirmationPrice);
 
+  /**************** Récapitulatif de la commande ****************/
   let t1 = document.createElement("table");
   let caption = document.createElement("caption")
   caption.textContent = "Récapitulatif de la commande";
@@ -37,23 +38,19 @@ function messageConfirm(){
   lign.appendChild(colonNom);
   lign.appendChild(colonPrix);
 
-  let i = 0;
   const basketRecap = JSON.parse(localStorage.getItem("recap"));
   basketRecap.products.forEach((element) => {
-  let lignProduct = document.createElement("tr");
-  lignProduct.setAttribute("id", element._id);
-  let photoProduct = document.createElement("img");
-  photoProduct.setAttribute("src", element.imageUrl);
-  photoProduct.setAttribute("width", "110px");
-  let nomProduct = document.createElement("td");
-  nomProduct.textContent = element.name;
-  nomProduct.setAttribute("width", "150px");
-  let prixProduct = document.createElement("td");
-  prixProduct.setAttribute("width", "150px");
-  prixProduct.textContent = element.price/100 +"€";
-
-      
-      
+    let lignProduct = document.createElement("tr");
+    lignProduct.setAttribute("id", element._id);
+    let photoProduct = document.createElement("img");
+    photoProduct.setAttribute("src", element.imageUrl);
+    photoProduct.setAttribute("width", "110px");
+    let nomProduct = document.createElement("td");
+    nomProduct.textContent = element.name;
+    nomProduct.setAttribute("width", "150px");
+    let prixProduct = document.createElement("td");
+    prixProduct.setAttribute("width", "150px");
+    prixProduct.textContent = element.price/100 +"€";
 
     t1.appendChild(lignProduct);
     lignProduct.appendChild(photoProduct);
@@ -69,8 +66,7 @@ function messageConfirm(){
     prixConfirme.textContent = totalOrder + " TTC";
     lignPrixTotal.setAttribute("colspan", "2");
 
-    });
-  
+  });
 };
 messageConfirm();
 

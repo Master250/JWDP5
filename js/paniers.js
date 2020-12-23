@@ -1,20 +1,21 @@
+/***************** Affichage des produits dans le panier ***************/
 function addBasketProduct(){
     const basketContent = JSON.parse(localStorage.getItem("basketContent"));//récuperation local storage
    
     let i = 0; // Le nombre de fois on tourne dans la boucle de produit
         for (let productBasket of basketContent){
                               
-            /* On interroge voir si le navigateur prend en charge l'élément de modèle HTML en vérifian l'attribut content de l'élément de modèle*/
+            /***** On interroge voir si le navigateur prend en charge l'élément de modèle HTML en vérifian l'attribut content de l'élément de modèle ******/
 
             if ('content' in document.createElement('template')) {
 
-                /* Instanciez la table avec le corps HTML existant et la ligne avec le modèle*/
+                /**** Instanciez la table avec le corps HTML existant et la ligne avec le modèle ****/
                 
                 var tbody = document.querySelector("tbody");               
                                             
                 var template = document.querySelector("#product");
                 
-                /* Calcul du montant total */
+                /*** Calcul du montant total ***/
                 let totalPrice = 0;
                 basketContent.forEach((basketContent) => {
                   totalPrice += basketContent.price;
@@ -22,7 +23,7 @@ function addBasketProduct(){
                 const totalPriceBasket = document.getElementById("totalPrice");
                 totalPriceBasket.innerHTML = "Le Total de votre commande est: " + totalPrice + "€";
                                 
-                /* Clonez la nouvelle ligne et insérez-la dans le tableau */
+                /*** Clonez la nouvelle ligne et insérez-la dans le tableau ****/
                 var clone = template.content.cloneNode(true);
                                 
                 td = clone.querySelectorAll("td");
@@ -37,7 +38,7 @@ function addBasketProduct(){
                 
                 tbody.appendChild(clone);
                 
-                /* Suppression d'un élément dans le panier */
+                /*** Suppression d'un élément dans le panier ***/
                 
                 btn.addEventListener('click', function(e){
                     e.preventDefault();
@@ -55,8 +56,7 @@ function addBasketProduct(){
             
 };
 
-
-/* Validation des données et les expressions régulières formulaire et contôle Regex */
+  /****** Validation des données et les expressions régulières formulaire et contôle Regex ******/
   function isAlpha(value){
     return /[a-zA-Z]+/.test(value);
   }
@@ -70,18 +70,17 @@ function addBasketProduct(){
     return /\w+/.test(value);
   }
 
-  /* Message erreur du formulaire quand les champs ne sont pas remplis */
+  /****** Message erreur du formulaire quand les champs ne sont pas remplis ******/
   
   function alertMessage(klass,msg){
     const errorMessage = document.createElement("p");
     errorMessage.setAttribute("class", klass);
     errorMessage.innerHTML = msg;
     errorMessage.style.color = "#FF3D00";
-    commandValid = false;
      
     return errorMessage;
   };
-  /* Validation de la saisie de l'utilisateur */
+  /****** Validation de la saisie de l'utilisateur ******/
   function validationContact(){
     let  isError = false;
     const warning = document.getElementById("warning");
@@ -114,10 +113,9 @@ function addBasketProduct(){
     return isError;
 };
   
-/* création et envoi de la requête */
+/****** création et envoi de la requête ******/
 
 function sendOrder(){
-  /*Récupération les informations de contact */
   const contact = {
     "lastName" :document.getElementById("name").value,
     "firstName" : document.getElementById("firstname").value,
@@ -130,7 +128,7 @@ function sendOrder(){
 
   let products = [];// création du tableau produits 
   
-  /* On parcourt le panier pour récupérer les id des produits */
+  /******* On parcourt le panier pour récupérer les id des produits ******/
 
   for (let i = 0; i < basketContent.length; i++){
     basketContent[i].id;
@@ -140,7 +138,7 @@ function sendOrder(){
 
   const sendOrderInfo = {contact:contact ,products:products}; // Création d'objet d'éléments à envoyer 
   
-  /* Envoi des informations et du tableau des produits */
+  /****** Envoi des informations et du tableau des produits ******/
 
   post("http://localhost:3000/api/cameras/order",sendOrderInfo).then(function(response){
          
@@ -157,8 +155,8 @@ function sendOrder(){
       if (error === 0){
         alert("impossible d'envoyer la requête, serveur non connecté");
       }
-    });
-  }
+  });
+}
 
 
   const btn1 = document.getElementById("btn1");
@@ -173,7 +171,7 @@ function sendOrder(){
         products = [];//On vide le tableau des produits
         localStorage.clear();// Vider le localstorage
     } 
-});
+  });
 
 
 
