@@ -166,5 +166,5 @@ footer .link-utile, .link-utile p
     text-decoration: none;
 }
 footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
-    margin-top: 40px;
+    height: 17%;
 }
