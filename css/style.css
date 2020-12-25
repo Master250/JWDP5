@@ -168,3 +168,35 @@ footer .link-utile, .link-utile p
 footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
     height: 17%;
 }
+
+/*----------------------------Le responsive design--------------------------------*/
+
+@media all and (max-width: 767px){
+    div.row.justify-content-around{
+        display: block;
+        padding: 20px;
+        width: auto;
+    }
+    footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
+        height: 17%;
+        padding-bottom: 25px;
+    }
+    footer .link-utile, .link-utile p {
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+
+}
+
+@media all and (min-width: 1025px){
+    
+    
+}
+@media screen and (orientation: landscape){
+
+}
