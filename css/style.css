@@ -173,7 +173,7 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
 /*----------------------------Le responsive design--------------------------------*/
 
 @media all and (max-width: 467px){
-    a.mr-auto.text-decoration-none{
+    a.mr-auto.text-decoration-none img{
         display: none;
     }
     nav.header{
@@ -197,7 +197,7 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
         padding-bottom: 0;
     }
 }
-@media all and (max-width: 767px){
+@media all and (min-width: 468px){
     div.row.justify-content-around{
         display: block;
         padding: 20px;
