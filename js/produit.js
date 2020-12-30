@@ -21,7 +21,7 @@ function addBasketContent(item){
 
     /* création du cadre de l'appareil photo sélectionné et ajoute les informations du produit dans la pages HTML */
 
-function addProductInfo(response){
+function addProductInfo(infoProduct){
     
     const container = document.getElementById("produitcontainer");
 
@@ -30,19 +30,19 @@ function addProductInfo(response){
     div.style.fontWeight = "bolder";
 
     const img = document.createElement("img");
-    img.setAttribute("src", response.imageUrl);
+    img.setAttribute("src", infoProduct.imageUrl);
     img.setAttribute("width", "100%");
 
     const title = document.createElement("div");
-    title.innerHTML = response.name;
+    title.innerHTML = infoProduct.name;
     title.setAttribute("class", "produittitle text-center mb-4");
     
     const legend = document.createElement("div");
-    legend.innerHTML = response.description;
+    legend.innerHTML = infoProduct.description;
 
     const price = document.createElement("p");
     price.setAttribute("font-size", "x-large")
-    price.innerHTML = response.price/100 + "€";
+    price.innerHTML = infoProduct.price/100 + "€";
 
     const lenses = document.createElement("select");
     const selectDefault = document.createElement("option");
@@ -61,24 +61,24 @@ function addProductInfo(response){
     btn.addEventListener("click", function(event){
         event.preventDefault();
         const lenses = document.getElementsByTagName("select");
-        const lenseSelectionner = lenses[0].value;
-        const item = response.description;
+        const lenseSelect = lenses[0].value;
+        const item = infoProduct.description;
         
         addBasketContent({
             "id": getId() ,
-            "name" : response.name,
+            "name" : infoProduct.name,
             "description" : item,
-            "option" : lenseSelectionner,
-            "img" : response.imageUrl,
-            "price" : response.price/100
+            "option" : lenseSelect,
+            "img" : infoProduct.imageUrl,
+            "price" : infoProduct.price/100
         });
         alert("ajouté au panier");
     });
     
-    for (let i = 0; i < response.lenses.length; i = i + 1){
+    for (let i = 0; i < infoProduct.lenses.length; i = i + 1){
         const option = document.createElement("option");
-        option.setAttribute("value", response.lenses[i]);
-        option.innerHTML = response.lenses[i];
+        option.setAttribute("value", infoProduct.lenses[i]);
+        option.innerHTML = infoProduct.lenses[i];
         lenses.appendChild(option);
     };
 

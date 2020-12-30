@@ -87,8 +87,9 @@ div#review table caption{
     font-size: large;
 }
 div#review table{
-    width: 60%;
+    width: 100%;
     border: 2px solid;
+    margin-left: unset;
 }
 div#review table tfoot{
     font-size: 1.5em;
@@ -189,6 +190,25 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
     }
     div.col-md-auto h3{
         display: none;
+    }
+
+    table#producttable caption{
+        font-size: 1em;
+    }
+    
+    table#producttable{
+        display: contents;
+    }
+    form#form_1.account{
+        width: auto;
+    }
+    input{
+        margin-left: 30px;
+        width: -webkit-fill-available;
+    }
+    p.confirmation-title.pt-5,h1#confirmation.confirmation-title.text-center.m-5 p, h2.confirmation-title.text-center
+    div#review table caption{
+        font-size: 0.6em;
     }
 }
 

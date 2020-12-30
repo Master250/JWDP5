@@ -1,6 +1,6 @@
 /**************** Ajoute des liens vers le code HTML *************/
 
-function addProduct(responseProduit, section){
+function addProductToHTML(responseProduit, section){
     const div = document.createElement("div");
     div.innerHTML = responseProduit.name;
     div.setAttribute("class","col-md-5 product-border mt-5 mb-4 col-sm-6 mr-4 ml-4 border border-dark");
@@ -32,7 +32,7 @@ get("http://localhost:3000/api/cameras")
     .then(function(response){
         const section = document.getElementsByClassName("row");
         for(let i = 0; i < response.length; i = i + 1){//Créeation des cadres de présentations des appareils photos
-            addProduct(response[i], section);
+            addProductToHTML(response[i], section);
         }
     })
     .catch(function (error){// requete ajax annulée

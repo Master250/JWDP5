@@ -46,7 +46,7 @@ function addBasketProduct(){
                     basketContent.splice(idx, 1);
                     localStorage.setItem("basketContent", JSON.stringify(basketContent)); // Sauvegarde du panier mis à jour
                     
-                   alert("Vous avez supprimer le produit :"+ productBasket.name);
+                   alert("Vous avez supprimé le produit :"+ productBasket.name);
                    window.location.reload(); // on recharge la page 
                 });                                       
             }; 
