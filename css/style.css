@@ -172,6 +172,31 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
 
 /*----------------------------Le responsive design--------------------------------*/
 
+@media all and (max-width: 467px){
+    a.mr-auto.text-decoration-none{
+        display: none;
+    }
+    nav.header{
+        display: flex;
+        justify-content: space-around;
+    }
+    table#producttable thead{
+        font-size: 1em;
+    }
+    input{
+        margin-left: auto;
+    }
+    form#form_1.account{
+        padding: 0;
+        margin-top: 50px;
+    }
+    main{
+        margin-bottom: 150px;
+    }
+    footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
+        padding-bottom: 0;
+    }
+}
 @media all and (max-width: 767px){
     div.row.justify-content-around{
         display: block;
