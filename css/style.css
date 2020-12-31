@@ -219,6 +219,9 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
         width: auto;
         margin-left: 0;
     }
+    div#review{
+        display: grid;
+    }
 }
 @media all and (max-width: 767px){
     div.row.justify-content-around{
@@ -238,6 +241,9 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
     }
     div.col-md-auto h3{
         display: none;
+    }
+    div#review{
+        display: grid;
     }
 }
 
@@ -275,6 +281,9 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
     form#form_1.account{
         padding: 0;
         margin-top: 50px;
+    }
+    div#review{
+        display: grid;
     }
     
 }
