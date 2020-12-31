@@ -291,11 +291,7 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
 }
 
 @media all and (min-width: 1025px){
-    div.row.justify-content-around{
-        display: block;
-        padding: 20px;
-        width: auto;
-    }
+    
     .header img {
         width: 50%;
     }
