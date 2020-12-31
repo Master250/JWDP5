@@ -172,19 +172,31 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
 
 /*----------------------------Le responsive design--------------------------------*/
 
-@media all and (max-width: 467px){
-    a.mr-auto.text-decoration-none img{
-        display: none;
-    }
+@media all and (max-width: 766px){
     nav.header{
         display: flex;
         justify-content: space-around;
     }
+   
+    .header img {
+        width: 50%;
+    }
     table#producttable thead{
         font-size: 1em;
     }
+    table#producttable{
+        margin-left: auto;
+    }
+    table#producttable caption{
+        font-size: initial;
+        padding: 20px;
+    }
     input{
         margin-left: auto;
+        width: auto;
+    }
+    label{
+        display: block;
     }
     form#form_1.account{
         padding: 0;
@@ -199,9 +211,16 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
     div.col-md-auto h3{
         display: none;
     }
-
+    p.confirmation-title.pt-5,h1#confirmation.confirmation-title.text-center.m-5 p, h2.confirmation-title.text-center
+    div#review table caption{
+        font-size: 0.6em;
+    }
+    div#review table{
+        width: auto;
+        margin-left: 0;
+    }
 }
-@media all and (max-width: 768px){
+@media all and (max-width: 767px){
     div.row.justify-content-around{
         display: block;
         padding: 20px;
@@ -220,29 +239,44 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
     div.col-md-auto h3{
         display: none;
     }
-
-    table#producttable caption{
-        font-size: 1em;
-    }
-    
-    table#producttable{
-        display: contents;
-    }
-    form#form_1.account{
-        width: auto;
-    }
-    input{
-        margin-left: 30px;
-        width: -webkit-fill-available;
-    }
-    p.confirmation-title.pt-5,h1#confirmation.confirmation-title.text-center.m-5 p, h2.confirmation-title.text-center
-    div#review table caption{
-        font-size: 0.6em;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width:1024px){
-
+    div.row.justify-content-around{
+        display: block;
+        padding: 20px;
+        width: auto;
+    }
+    .header img {
+        width: 50%;
+    }
+    table#producttable{
+        margin-left: auto;
+    }
+    footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
+        height: 17%;
+        
+    }
+    footer .link-utile, .link-utile p {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        text-decoration: none;
+    }
+    div.col-md-auto h3{
+        display: none;
+    }
+    input{
+        margin-left: 0;        
+    }
+    label{
+        display: block;
+    }
+    form#form_1.account{
+        padding: 0;
+        margin-top: 50px;
+    }
+    
 }
 
 @media all and (min-width: 1025px){
