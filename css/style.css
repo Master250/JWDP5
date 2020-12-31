@@ -288,6 +288,43 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
 }
 
 @media all and (min-width: 1025px){
+    div.row.justify-content-around{
+        display: block;
+        padding: 20px;
+        width: auto;
+    }
+    .header img {
+        width: 50%;
+    }
+    table#producttable{
+        margin-left: auto;
+    }
+    footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
+        height: 17%;
+        
+    }
+    footer .link-utile, .link-utile p {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        text-decoration: none;
+    }
+    div.col-md-auto h3{
+        display: none;
+    }
+    input{
+        margin-left: 0;        
+    }
+    label{
+        display: block;
+    }
+    form#form_1.account{
+        padding: 0;
+        margin-top: 50px;
+    }
+    div#review{
+        display: grid;
+    }
     form#form_1.account{
         display: inherit;
     }
