@@ -284,6 +284,9 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
     div#review{
         display: grid;
     }
+    form#form_1.account{
+        display: inherit;
+    }
     
 }
 
