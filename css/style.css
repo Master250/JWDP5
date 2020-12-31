@@ -288,7 +288,9 @@ footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
 }
 
 @media all and (min-width: 1025px){
-    
+    form#form_1.account{
+        display: inherit;
+    }
     
 }
 @media screen and (orientation: landscape){
