@@ -86,7 +86,7 @@ function addBasketProduct(){
     const warning = document.getElementById("warning");
     warning.innerHTML = "";
     let inputIds = ["firstname", "name", "email", "adresse", "city"];
-    let inputTexts = ["prenom","nom", "mail", "adresse", "ville"];
+    let inputTexts = ["firstname","name", "mail", "adresse", "ville"];
     for (let i = 0; i < inputIds.length; i++){
       const input = document.getElementById(inputIds[i]);
       
