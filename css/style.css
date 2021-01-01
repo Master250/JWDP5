@@ -185,9 +185,7 @@ footer .link-utile, .link-utile p
     table#producttable thead{
         font-size: 1em;
     }
-    table#producttable{
-        margin-left: auto;
-    }
+    
     table#producttable caption{
         font-size: initial;
         padding: 20px;
@@ -251,9 +249,7 @@ footer .link-utile, .link-utile p
     .header img {
         width: 50%;
     }
-    table#producttable{
-        margin-left: auto;
-    }
+    
     footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
         height: 17%;
         
