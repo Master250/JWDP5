@@ -166,6 +166,7 @@ footer .link-utile, .link-utile p
     justify-content: space-around;
     color: white;
     text-decoration: none;
+    margin: auto;
 }
 /*footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
     height: 17%;
