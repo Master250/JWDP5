@@ -20,19 +20,19 @@ function addProductToHTML(responseProduit, section){
     const link = document.createElement("a");
     link.setAttribute("href", "pages/produit.html?id=" + responseProduit._id);
     
-    section[1].appendChild(div);
-    div.appendChild(link);
     link.appendChild(img);
+    div.appendChild(link);
     div.appendChild(legend);
     div.appendChild(lenses);
     div.appendChild(price);
+    section.appendChild(div);
 }
 
 get("http://localhost:3000/api/cameras")
     .then(function(response){
         const section = document.getElementsByClassName("row");
         for(let i = 0; i < response.length; i = i + 1){//Créeation des cadres de présentations des appareils photos
-            addProductToHTML(response[i], section);
+            addProductToHTML(response[i], section[1]);
         }
     })
     .catch(function (error){// requete ajax annulée
