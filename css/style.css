@@ -173,9 +173,7 @@ footer .link-utile, .link-utile p
     text-decoration: none;
     margin: auto;
 }
-/*footer#footer.d-flex.justify-content-between.pt-3.pb-3.fixed-bottom{
-    height: 17%;
-}*/
+
 
 /*----------------------------Le responsive design--------------------------------*/
 
@@ -282,8 +280,8 @@ footer .link-utile, .link-utile p
     }
     input {
         display: block;
-        width: -webkit-fill-available ;
-        width: -moz-available;
+        width: 50%;
+        margin: auto;
     }
     label{
         display: block;
@@ -326,9 +324,7 @@ footer .link-utile, .link-utile p
         display: none;
     }
     input{
-        /*margin-left: 0; */
         margin: auto;
-               
     }
     label{
         display: block;
