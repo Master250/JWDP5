@@ -143,9 +143,7 @@ div.formulaire-contact, div.form-group.col-1{
     margin-bottom: 30px;
 }
 input{
-    display: block;
-    /*width: 50%;*/
-    width: -webkit-fill-available;
+    width: 50%;
 }
 label{
     display: block;
@@ -200,8 +198,9 @@ footer .link-utile, .link-utile p
     }
     input{
         margin-left: auto;
-        /*width: auto;*/
-        width: -webkit-fill-available;
+        display: block;
+        width: -webkit-fill-available ;
+        width: -moz-available;
     }
     label{
         display: block;
@@ -251,6 +250,15 @@ footer .link-utile, .link-utile p
     div#review{
         display: grid;
     }
+    input{
+        margin-left: auto;
+        display: block;
+        width: -webkit-fill-available ;
+        width: -moz-available;
+    }
+    label{
+        display: block;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width:1024px){
@@ -274,7 +282,8 @@ footer .link-utile, .link-utile p
     }
     input {
         display: block;
-        width: -webkit-fill-available;
+        width: -webkit-fill-available ;
+        width: -moz-available;
     }
     label{
         display: block;
@@ -318,8 +327,8 @@ footer .link-utile, .link-utile p
     }
     input{
         /*margin-left: 0; */
-        display: block;
-        width: -webkit-fill-available;       
+        margin: auto;
+               
     }
     label{
         display: block;
