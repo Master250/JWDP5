@@ -51,9 +51,7 @@ main{
     background-color: #000000d9;
     color: whitesmoke;
 }
-div#page-container{
-    margin-bottom: 300px;
-}
+
 /***************************** Display main Grid********************************/
 .row
 {
