@@ -143,7 +143,12 @@ div.formulaire-contact, div.form-group.col-1{
     margin-bottom: 30px;
 }
 input{
-    width: 50%;
+    display: block;
+    /*width: 50%;*/
+    width: -webkit-fill-available;
+}
+label{
+    display: block;
 }
 button#btn1{
     margin-top: 20px;
@@ -195,7 +200,8 @@ footer .link-utile, .link-utile p
     }
     input{
         margin-left: auto;
-        width: auto;
+        /*width: auto;*/
+        width: -webkit-fill-available;
     }
     label{
         display: block;
@@ -223,7 +229,7 @@ footer .link-utile, .link-utile p
         display: grid;
     }
 }
-@media all and (max-width: 768px){
+@media all and (max-width: 767px){
     div.row.justify-content-around{
         display: block;
         padding: 20px;
@@ -247,7 +253,7 @@ footer .link-utile, .link-utile p
     }
 }
 
-@media screen and (min-width: 769px) and (max-width:1024px){
+@media screen and (min-width: 768px) and (max-width:1024px){
     
     .header img {
         width: 50%;
@@ -266,8 +272,9 @@ footer .link-utile, .link-utile p
     div.col-md-auto h3{
         display: none;
     }
-    input{
-        margin-left: 0;        
+    input {
+        display: block;
+        width: -webkit-fill-available;
     }
     label{
         display: block;
@@ -310,7 +317,9 @@ footer .link-utile, .link-utile p
         display: none;
     }
     input{
-        margin-left: 0;        
+        /*margin-left: 0; */
+        display: block;
+        width: -webkit-fill-available;       
     }
     label{
         display: block;
