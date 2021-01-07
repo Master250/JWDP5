@@ -145,7 +145,7 @@ div.formulaire-contact, div.form-group.col-1{
 input{
     display: block;
     /*width: 50%;*/
-    width: -webkit-fill-available;
+    width: -webkit-fill-available -moz-available;
 }
 label{
     display: block;
