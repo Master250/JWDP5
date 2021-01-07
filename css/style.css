@@ -177,7 +177,7 @@ footer .link-utile, .link-utile p
 
 /*----------------------------Le responsive design--------------------------------*/
 
-@media all and (max-width: 766px){
+@media all and (max-width: 767px){
     nav.header{
         display: flex;
         justify-content: space-around;
@@ -226,7 +226,7 @@ footer .link-utile, .link-utile p
         display: grid;
     }
 }
-@media all and (max-width: 767px){
+@media all and (max-width: 768px){
     div.row.justify-content-around{
         display: block;
         padding: 20px;
@@ -259,7 +259,7 @@ footer .link-utile, .link-utile p
     }
 }
 
-@media screen and (min-width: 768px) and (max-width:1024px){
+@media screen and (min-width: 769px) and (max-width:1024px){
     
     .header img {
         width: 50%;
