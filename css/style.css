@@ -52,6 +52,7 @@ main{
     color: whitesmoke;
 }
 
+
 /***************************** Display main Grid********************************/
 .row
 {
@@ -281,6 +282,9 @@ footer .link-utile, .link-utile p
     form#form_1.account{
         display: inherit;
     }
+    div#page-container{
+        margin-bottom: 300px;
+    }
     
 }
 
@@ -321,7 +325,9 @@ footer .link-utile, .link-utile p
     form#form_1.account{
         display: inherit;
     }
-    
+    div#page-container{
+        margin-bottom: 300px;
+    }
 }
 @media screen and (orientation: landscape){
 
