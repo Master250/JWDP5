@@ -1,7 +1,6 @@
     /******************** Récupérer l'id dans l'URL *************/
 function getId(){
     const param = window.location.search;
-    console.log(window.location);
     const id = param.replace("?id=", "");//Récupère uniquement l'identifiant d'un produit
     return id;
 };
@@ -10,7 +9,7 @@ function getId(){
 function addBasketContent(item){
     
     let basketContent = JSON.parse(localStorage.getItem("basketContent"));
-
+    
     if (basketContent === null){
         basketContent = [];
     } 

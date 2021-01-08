@@ -17,7 +17,7 @@ function get(url){
   return promise;
 };
 
-/***********Renvoi de l'API*************/
+/***********envoi de requête à l'API*************/
 
 function post(url, jsonBody){
   const promise = new Promise(function(resolve, reject){
